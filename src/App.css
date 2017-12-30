@@ -1,0 +1,1629 @@
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;}
+em,h1,h2,h3,h4,h5,h6,i{font-weight:100;font-style:normal;}
+li,ol,ul{list-style-type:none;}
+a{outline:0;color:#666;text-decoration:none;}
+a:hover{text-decoration:none;}
+
+input{
+  outline: none;
+  border:  0;
+}
+
+input::-webkit-input-placeholder,input:-moz-placeholder,
+input::-moz-placeholder,input:-ms-input-placeholde{
+  color:#dfdfe1;
+}
+
+.clearfix { 
+
+  *zoom: 1; 
+
+} 
+
+ 
+
+.clearfix:before, 
+
+:after { 
+
+  display: table; 
+
+  line-height: 0; 
+
+  content: ""; 
+
+} 
+
+ 
+
+.clearfix:after { 
+
+  clear: both; 
+
+} 
+
+
+body{
+  overflow: hidden;
+}
+
+@keyframes AppLogoSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-moz-keyframes AppLogoSpin{
+  from { -moz-transform:rotate(0deg); transform: rotate(0deg); }
+  to { -moz-transform:rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes AppLogoSpin{
+  from {-webkit-transform:rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform:rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes AppLogoSpin{
+  from {-o-transform:rotate(0deg); transform: rotate(0deg); }
+  to { -o-transform:rotate(360deg); transform: rotate(360deg); }
+}
+
+.PageLoading{
+  width: 20px;
+  height: 20px;
+   animation: AppLogoSpin 6.012s linear infinite; /*120FPS*/
+}
+
+/* 组件的css规则 ：******.组件名_文件名_(小组件名／上下文关系名)_状态名 ***********/
+
+/* 
+    //////////////////////////////////////////
+    Header Component ----------HeaderBanner.js
+    //////////////////////////////////////////
+*/
+.HeaderBanner_WrapBox{
+  width: 980px;
+  height: 36px;
+  border: 1px solid #ffffff;
+  padding-top: 24px;
+  background-color: #b60000;
+  padding-left: 18px;
+}
+
+.HeaderBanner_Logo{
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-top: 4px;
+  width: 140px;
+  height: 36px;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  margin-right: 73px;
+  background: no-repeat left center;
+  background-size: 26px 26px;
+}
+.HeaderBanner_Name{
+  color: #ffe6e9
+  
+}
+.HeaderBanner_Nav{
+  position:relative;
+  top:-4px;
+  left:0px;
+  border-radius: 5px;
+  width:53px;
+  height:29px;
+  margin-right:9px;
+  float:left;
+  border: 1px solid rgba(0, 0, 0, 0.3); 
+}
+.HeaderBanner_Nav_Key{
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  height: 24px;
+  color: rgba(255,255,255,.5);
+  line-height: 24px;
+  display: inline-block;
+}
+.HeaderBanner_SearchBox{
+  width: 500px;
+  height: 36px;
+  float: left;
+}
+
+.HeaderBanner_Search{
+  outline: none;
+  display: block;
+  width: 226px;
+  height: 25px;
+  border-radius: 10px;
+  border: 0px;
+  line-height: 25px;
+  padding-left: 20px;
+}
+.HeaderBanner_UserLog_WrapBox{
+  position: relative;
+  float: right;
+  border-left: 1px solid rgba(0,0,0,.1);
+  height: 60px;
+  width: 65px;
+  margin-top: -24px;
+}
+
+
+
+.HeaderBanner_UserLog_User{
+  position: absolute;
+  top: 25px;
+  left: 17px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: no-repeat center center;
+  background-size: 25px;
+  background-color: #D6D8DA;
+}
+
+.HeaderBanner_UserLog_LogBannel{
+  position: absolute;
+  z-index: 5;
+  left: -610px;
+  bottom: -524px;
+  width: 350px;
+  height: 500px;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  background-color: #fafafa;
+  
+}
+
+.HeaderBanner_UserLog_Close{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #999999;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.HeaderBanner_UserLog_Bg{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 0px 27px;
+}
+
+.HeaderBanner_UserLog_FormBox{
+  position: absolute;
+  top: 203px;
+  left: 45px;
+}
+.HeaderBanner_UserLog_inputBox{
+  position: relative;
+}
+.HeaderBanner_UserLog_Password{
+  margin-top: -1px;
+}
+.HeaderBanner_UserLog_input{
+  display: block;
+  box-sizing: border-box;
+  width: 258px;
+  height: 38px;
+  font-size: 14px; 
+  padding-left: 60px;
+  border: 1px solid #dfdfe1;
+  border-radius: 3px;
+  background: no-repeat 12px;
+  background-size:  20px 21px;
+
+}
+.HeaderBanner_UserLog_PhoneSpecial{
+  font-size: 12px;
+  position: absolute;
+  top:10px;
+  left:34px;
+}
+
+.HeaderBanner_UserLog_TipBox{
+  width: 258px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+.HeaderBanner_UserLog_AutoLog{
+  float: left;
+}
+.HeaderBanner_UserLog_Tip{
+  float: right;
+  color: #C30000;
+}
+
+.HeaderBanner_UserLog_Log {
+  display: block;
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background-color: #CF0023;
+  border-radius: 3px;
+}
+.HeaderBanner_UserLog_Log:active{
+  background-color: rgb(182, 3, 36);
+  
+}
+
+.HeaderBanner_UserLog_LogOut_WrapBox{
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  left: -184px;
+  width: 250px;
+  height: 38px;
+  border: 1px solid #B5B5B5;
+}
+
+.HeaderBanner_UserLog_LogOut{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-left: 45px;
+  line-height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #FAFAFA;
+}
+.HeaderBanner_UserLog_LogOut:hover{
+  background-color: #EBEBEB;
+}
+.HeaderBanner_UserLog_LogOutImg{
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+}
+.HeaderBanner_UserLog_LeftArrow{
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 9px;
+  height: 9px;
+}
+/* 
+    //////////////////////////////////////////
+    Home Component ----------LeftSide.js
+    //////////////////////////////////////////
+*/
+.Home_LeftSide_WrapBox{
+  overflow: auto;
+  height: 540px;
+  width: 200px;
+  float: left;
+}
+
+.Home_LeftSide_FuncBarBox{
+  width: 200px;
+  min-height:540px;
+  background-color: #f3efee;
+}
+
+.Home_LeftSide_Section_Title{
+  line-height: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7D7D77;
+  padding-left: 10px;
+}
+
+.Home_LeftSide_Section_Item{
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.Home_LeftSide_Section_Item_Active{
+  background-color: #DBD6D6;  
+}
+
+.Home_LeftSide_Section_ItemLink{
+  position: relative;
+  font-size: 12px;
+  padding-left: 44px;
+  border-left: 3px solid transparent;
+  
+}
+
+.Home_LeftSide_Section_ItemLink_Active{
+  border-left: 3px solid #D40000;
+}
+.Home_LeftSide_Section_ItemIcon{
+  position: absolute;
+  top:0px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+
+/* 
+    //////////////////////////////////////////
+    Found Component ----------NavigationList.js
+    //////////////////////////////////////////
+*/
+
+.NavigationList_Ul{
+  width: 800px;
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.NavigationList_LinkItem_Li{
+  display: inline-block;
+  margin-right: 65px;
+  height: 100%;
+}
+.NavigationList_LinkItem_ActiveLink{
+  color: rgb(182, 0, 0);
+}
+
+/* 
+    //////////////////////////////////////////
+    Rank Component ----------Rank.js
+    //////////////////////////////////////////
+*/
+.Rank_Ul {
+  height: 34px;
+  padding-top: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.Rank_LinkItem_Link{
+  color: #66666D;
+  margin-right: 27px;
+  width: 60px;
+  font-size: 16px;
+  line-height: 42px;
+  border-bottom: 3px solid rgba(0,0,0,0);
+}
+
+.Rank_LinkItem_Link_Active{
+  font-size: 18px;
+  border-bottom: 3px solid #E1E1E1;
+}
+
+
+/* 
+    //////////////////////////////////////////
+    Rank Component ----------GlobeContain.js
+    //////////////////////////////////////////
+*/
+.GlobeContain_WrapBox{
+  float: left;
+  position: relative;
+  width:150px;
+  margin-right:47px;
+}
+.GlobeContain_Contain{
+  height: 190px;
+  margin-top: 20px;
+  position: relative;
+}
+.GlobeContain_Wait_WrapBox{
+  border: 1px solid #e6e6e6;
+  background-color: rgba(255,255,255,0.5);
+  width: 148px;
+  height: 148px;
+  z-index: 3;
+}
+
+.GlobeContain_Wait_WrapImg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.GlobeContain_TopBanner{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 138px;
+  height: 19px;
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10px;
+  background:-webkit-linear-gradient(left,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:-moz-linear-gradient(right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:-o-linear-gradient(right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:linear-gradient(to right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+}
+
+.GlobeContain_Infomation{
+  width: 148px;
+  height: 148px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+/* 
+    //////////////////////////////////////////
+    Rank Component ----------RankContain.js
+    //////////////////////////////////////////
+*/
+
+
+.RankContain_ContainBox{
+  width: 237px;
+  height: 360px;
+  margin-top: 30px;
+  margin-left: 12px;
+  border: 1px solid #ECECEC;
+  position: relative;
+}
+.RankContain_SeeAllBox{
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10px;
+}
+.RankContain_RankWait_Box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+}
+.RankContain_RankWait_Img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.RankContain_RankItemContain{
+  margin-top: -5px;
+}
+.RankContain_Item_Box{
+  width: 217px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.RankContain_Item_Box_Single{
+  background-color: #fafafa;
+}
+.RankContain_Item_Box_Active{
+  background-color: #E6E6E6;
+}
+.RankContain_Item_Num{
+  float:left;
+  text-align: left;
+  width: 60%;
+  height:30px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.RankContain_Item_Artists{
+  float:left;
+  text-align: right;
+  width: 40%;
+  height:30px;
+  font-size: 12px;
+  overflow: hidden;
+  color: #8C8C8C;
+}
+
+/* 
+    //////////////////////////////////////////
+    RankDetail Component ----------RankInfo.js
+    //////////////////////////////////////////
+*/
+
+.RankInfo_WrapBox{
+  background-color: rgba(255,255,255,0.9);
+  width: 740px;
+  /* height: 300px; */
+  border-bottom: 2px solid #761A1B;
+  padding: 30px 30px;
+  position: relative;
+}
+.RankInfo_LeftSide_Img{
+  width: 178px;
+  height: 178px;
+  border: 1px solid rgba(187,180,168,0.5);
+  margin-right: 33px;
+}
+.RankInfo_RightSide_ContainBox{
+  font-size: 22px;
+  line-height: 22px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+.RankInfo_RightSide_ListType{
+  background-color: #D90000;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-top: -1px;
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+}
+.RankInfo_RightSide_AvatarImg{
+  float: left;
+  margin-right: 7px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  width: 32px;
+  height: 32px;
+  overflow:hidden;
+}
+.RankInfo_RightSide_CreatorNickname{
+  float: left;
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+}
+.RankInfo_RightSide_LastUpTime{
+  float: left;
+  color: #E2E2E2;
+  margin-left: 4px;
+  line-height: 32px;
+  font-size: 13px;
+}
+.RankInfo_SonglistTagAndDes_Labe{
+  font-weight: 800;
+  float:'left'
+}
+.RankInfo_SonglistTagAndDes_Tags{
+  float:left;
+  color:#6291D6;
+}
+.RankInfo_SonglistTagAndDes_Des{
+  font-weight: 800;
+  float:left;
+}
+.RankInfo_SonglistTagAndDes_Description{
+  white-space: pre-wrap;
+  width:485px;
+  color:#777777;
+  float: left;
+  margin-bottom:66px;
+}
+.RankInfo_SonglistTagAndDes_Description_Long{
+  max-width: 525px;
+  height:70px;
+  overflow:hidden;
+}
+.RankInfo_SonglistTagAndDes_Description_Long_Active{
+  height: auto;
+  overflow:visible;
+}
+.RankInfo_SonglistTagAndDes_Description_ClickShow{
+  position: absolute;
+  bottom: 80px;
+  right:30px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.RankInfo_SonglistTagAndDes_Description_ClickShow>span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border:2px solid #8C8C8C;
+  border-color: transparent #8C8C8C #8C8C8C transparent;
+  transform: rotate(45deg);
+}
+.RankInfo_SonglistTagAndDes_Description_ClickShow_Active>span{
+  border-color:  #8C8C8C transparent transparent #8C8C8C ;
+}
+.RankInfo_FuncBar_PlayAllWrapBox{
+  position: relative;
+  float: left;
+  width: 125px;
+  height: 28px;
+  margin-right: 10px;
+  line-height: 28px;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+}
+.RankInfo_FuncBar_Play{
+  display: inline-block;
+  padding-left: 11px;
+  background-color: rgba(0, 0, 0, 0);
+  border-right: 1px solid #D9D9D9;
+  cursor: pointer;
+}
+.RankInfo_FuncBar_Play:active{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.RankInfo_FuncBar_PlayImg{
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  background:  no-repeat center center;
+  background-size: 16px;
+}
+.RankInfo_FuncBar_PlayFont{
+  font-size: 14px;
+  height: 28px;
+  display: inline-block;
+  padding-right: 9px;
+  margin-left: 4px;
+}
+
+.RankInfo_FuncBar_AddImg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 28px;
+  background: no-repeat center center ;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 12px;
+}
+.RankInfo_FuncBar_AddImg:active{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.RankInfo_FuncBar_Subscribed{
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  border: 1px solid #C9C9C9;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.RankInfo_FuncBar_Subscribed:active{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.RankInfo_RouteLinks_Link{
+  height: 32px;
+  line-height: 32px;
+  background-color: #F3F3F3;
+  border: 1px solid #C8C6C7;
+  padding: 0px 10px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 4px;
+}
+.RankInfo_RouteLinks_Link_Active{
+  background-color: #BD0000;
+  border-color: #850909;
+}
+.RankInfo_RouteLinks_Link_Active a{
+  color: #fff;
+}
+/* 
+    //////////////////////////////////////////
+    RankDetail Component ----------List.js
+    //////////////////////////////////////////
+*/
+.Rank_List_DoubleItem{
+  background-color: #F4F4F4;
+}
+.Rank_List_Item_Active{
+  background-color: #E1E1E1;
+}
+.Rank_List_Item_WrapBox{
+  padding: 0px 25px 0px 29px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.Rank_List_Item_Index{
+  float:left;
+  width: 22px;
+  font-size: 12px;
+  color: #8C8C8C
+}
+.Rank_List_Item_InterBox{
+  float:left;
+  width: 58px;
+  text-align: center;
+  line-height: 30px;
+}
+.Rank_List_Item_Name{
+  float:left;
+  overflow: hidden;
+  width: 294px;
+  padding: 0px 9px;
+  font-size: 13px;
+}
+.Rank_List_Item_Artists{
+  float:left;
+  overflow: hidden;
+  width: 148px;
+  padding: 0px 9px;
+  font-size: 13px;
+  color: #8C8C8C;
+}
+.Rank_List_Item_Album{
+  float:left;
+  overflow: hidden;
+  width: 114px;
+  padding: 0px 9px;
+  font-size: 13px;
+  color: #8C8C8C;
+}
+.Rank_List_Item_Duration{
+  float:left;
+  color: #8C8C8C;
+  font-size: 12px;
+}
+/* 
+    //////////////////////////////////////////
+    Songlist Component ----------SelectSongList.js
+    //////////////////////////////////////////
+*/
+.Songlist_SelectSongList_ListButton{
+  width: 89px;
+  height: 28px;
+  outline: none;
+  background-color: #fff
+}
+.Songlist_SelectSongList_HotLabel{
+  text-align: center;
+  display: inline-block;
+  padding: 0 13px;
+  font-size: 12px;
+  color: #5D5D5D;
+}
+.Songlist_SelectSongList_HotLabel_NotLast{
+  border-right: 1px solid #E1E1E1;
+}
+/* 
+    //////////////////////////////////////////
+    Songlist Component ----------List.js
+    //////////////////////////////////////////
+*/
+.Songlist_List_Item_BoxWrap{
+  display: inline-block;
+  padding: 22px 0 17px 0;
+  width: 150px;
+  margin-right: 46px;
+  cursor:pointer;
+}
+.Songlist_List_Item_Banner{
+  position: absolute;
+  left: 0px;
+  padding-right: 5px;
+  color: #fff;
+  line-height: 20px;
+  font-size: 13px;
+  width: 145px;
+  height: 20px;
+  text-align: right;
+}
+.Songlist_List_Item_TopBanner{
+  top: 1px;
+  background:-webkit-linear-gradient(left,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:-moz-linear-gradient(right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:-o-linear-gradient(right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+  background:linear-gradient(to right,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5));
+}
+.Songlist_List_Item_BottomBanner{
+  height:22px;
+  bottom: 1px;
+  font-size: 13px;
+  text-align: left;
+  background: -webkit-linear-gradient(bottom ,rgba(0, 0, 0, 0.3),rgba(0,0,0,0.0));
+  background: -o-linear-gradient(top ,rgba(0, 0, 0, 0.3),rgba(0,0,0,0.0));
+  background: -moz-linear-gradient(top ,rgba(0, 0, 0, 0.3),rgba(0,0,0,0.0));
+  background: linear-gradient(to top ,rgba(0, 0, 0, 0.3),rgba(0,0,0,0.0));
+}
+.Songlist_List_Item_UserImg{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  left: 2px;
+  margin-right: 4px;
+}
+.Songlist_List_Item_UserName{
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+}
+.Songlist_List_Item_PlayBtn{
+  display: none;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Songlist_List_Item_Cir{
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 1px; 
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+.Songlist_List_Item_Cir>img{
+  position: relative;
+  top:1px;
+  width: 12px;
+  height: 12px;
+}
+.Songlist_List_Item_BoxWrap:hover .Songlist_List_Item_PlayBtn{
+  display: block;
+}
+/* 
+    //////////////////////////////////////////
+    Radio Component ----------RecommandProgram.js
+    //////////////////////////////////////////
+*/
+.Radio_RecommandProgram_WrapBox{
+  padding: 0px 30px;
+   margin-top: 18px;
+}
+.Radio_RecommandProgram_Title{
+  font-size: 20px;
+  line-height: 32px;
+  border-bottom: 3px solid #E1E1E1;
+  width: 84px;
+  text-align: center;
+}
+.Radio_RecommandProgram_ProgramBox{
+  border-top: 1px solid #E1E1E1;
+  overflow: hidden;
+  height: 223px;
+}
+.Radio_RecommandProgram_ItemBox{
+  float: left;
+  padding: 10px 0px;
+  width: 364px;
+  margin-right: 14px;
+  border-bottom: 1px solid #F1F1F1;
+}
+.Radio_RecommandProgram_ImgBox{
+  float: left;
+  margin-right: 10px;
+}
+.Radio_RecommandProgram_Img{
+  width: 80px;
+  height: 80px;
+}
+.Radio_RecommandProgram_InfoBox{
+  float: left;
+  width: 274px;
+  overflow:hidden;
+}
+.Radio_RecommandProgram_Name{
+  line-height: 49px;
+  font-size: 18px;
+  height:49px;
+  overflow:hidden;
+}
+.Radio_RecommandProgram_Reason{
+  font-size: 14px;
+   color: #9E9D99;
+}
+/* 
+    //////////////////////////////////////////
+    Radio Component ----------RadioList.js
+    //////////////////////////////////////////
+*/
+.Radio_RadioList_WrapBox{
+  padding: 0px 0px 26px 40px;
+  overflow: hidden;
+}
+.Radio_RadioList_WrapBox_Scroll{
+  width:1800px;
+  overflow:hidden;
+  transition: 1200ms ;
+}
+.Radio_RadioList_WrapBox_Scroll_ToLeft{
+  -webkit-transform: translateX(-760px);
+  -moz-transform: translateX(-760px);
+  -o-transform: translateX(-760px);
+  -ms-transform: translateX(-760px);
+  transform: translateX(-760px);
+}
+.Radio_RadioList_WrapBox_Scroll_ToRight{
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.Radio_RadioListRadioCatalog{
+  width: 760px;
+  float: left;
+  height:178px;
+}
+.Radio_RadioList_IndexBall{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #DADADA;
+  border-radius: 50%;
+}
+.Radio_RadioList_IndexBall_Active{
+  background-color: #D62222;
+}
+.Radio_RadioList_IndexBall_First{
+  margin-right: 8px;
+}
+.Radio_RadioList_RadioListItem_ItemBox{
+  margin-top: 21px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 6px;
+  color: #ACACAC;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Radio_RadioList_RadioListItem_ItemBox_Active{
+  background-color: #EFEFEF;
+  color: #D42945;
+}
+.Radio_RadioList_RadioListItem_ItemImg{
+  width: 48px;
+  height: 34px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 0 -5px;
+}
+.Radio_RadioList_RadioListItem_ItemImg_Active{
+  background-position: -48px -5px;
+}
+.Radio_RadioList_RadioListItem_Name{
+  line-height: 22px;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 800;
+  text-align: center;
+}
+/* 
+    //////////////////////////////////////////
+    Radio Component ----------Categories.js
+    //////////////////////////////////////////
+*/
+.Radio_Categories_WrapBox{
+  padding: 0px 30px 20px 30px;
+  margin-top: 18px;
+}
+/* 
+    //////////////////////////////////////////
+    Radio Component ----------RCMRadio.js
+    //////////////////////////////////////////
+*/
+.Radio_RCMRadio_Title{
+  font-size: 20px;
+  line-height: 32px;
+  border-bottom: 3px solid #E1E1E1;
+  width: 110px;
+  text-align: center;
+}
+.Radio_RCMRadio_Content{
+  border-top: 1px solid #E1E1E1;
+  overflow: hidden;
+}
+.Radio_RCMRadio_Item_WrapBox{
+  float: left;
+  width: 140px;
+  margin-right:10px;
+}
+.Radio_RCMRadio_Item_Name{
+  margin-top: 6px;
+  line-height: 22px;
+  height:22px;
+  overflow:hidden;
+  font-size: 14px;
+}
+.Radio_RCMRadio_Item_Rcmdtext{
+  font-size:12px;
+  line-height:12px;
+  height:28px;
+  color:#888888;
+}
+/* 
+    //////////////////////////////////////////
+    RadioDetail Component ----------RadioDetailInfo.js
+    //////////////////////////////////////////
+*/
+.RadioDetail_RadioDetailInfo_WrapBox{
+  background-color: rgba(255,255,255,0.9);
+  width: 740px;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 30px 30px 0px 30px;
+  position: relative;
+}
+.RadioDetail_RadioDetailInfo_LeftSide_Img{
+  width: 178px;
+  height: 178px;
+  border: 1px solid rgba(187,180,168,0.5);
+  margin-right: 33px;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Img{
+  font-size: 22px;
+  line-height: 22px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Title{
+  background-color: #D90000;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-top: -1px;
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Avatar{
+  float: left;
+  margin-right: 7px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  width: 32px;
+  height: 32px;
+  overflow:hidden;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Nickname{
+  float: left;
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+}
+.RadioDetail_RadioDetailInfo_RightSide_DesWrapBox{
+  margin-top: 18px;
+  font-size: 12px;
+  height:70px;
+  overflow:hidden;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Category{
+  float:left;
+  font-weight: 800;
+  font-size:12px;
+  color:#C85849;
+  border:1px solid #C85849;
+  margin-right:5px;
+}
+.RadioDetail_RadioDetailInfo_RightSide_Desc{
+  line-height:20px;
+  color:#979797;
+}
+.RadioDetail_RadioDetailInfo_FunBar_WrapBox{
+  height: 30px;
+  line-height: 30px;
+}
+.RadioDetail_RadioDetailInfo_FunBar_SubBox{
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+}
+.RadioDetail_RadioDetailInfo_FunBar_PlayBox{
+  float: left;
+  width: 106px;
+  height: 28px;
+  margin-right: 10px;
+  line-height: 28px;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+  padding-left: 11px;
+  padding-right: 8px;
+}
+.RadioDetail_RadioDetailInfo_FunBar_PlayIconBox{
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #821010;
+}
+.RadioDetail_RadioDetailInfo_FunBar_PlayWord{
+  font-size: 14px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 4px;
+  padding-right: 9px;
+  border-right: 1px solid #D9D9D9;
+}
+.RadioDetail_RadioDetailInfo_FunBar_Share{
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+}
+/* 
+    //////////////////////////////////////////
+    RadioDetail Component ----------RadioDetailPrograms.js
+    //////////////////////////////////////////
+*/
+.RadioDetail_RadioDetailPrograms_TopBanner{
+  border-bottom: 1px solid #D9D9D9;
+  box-shadow: 0px 1px 15px 1px  #D9D9D9;
+  color: #9B9B9B;
+  font-size: 12px;
+  padding-left: 30px;
+}
+.RadioDetail_RadioDetailPrograms_Item{
+  height: 40px;
+  color: #888888;
+  font-size: 12px;
+  line-height: 40px;
+  padding: 10px 0px;
+  padding-left: 19px;
+}
+.RadioDetail_RadioDetailPrograms_Item_Single{
+  background-color: #f4f4f4;
+}
+.RadioDetail_RadioDetailPrograms_Item_Active{
+  background-color: #e1e1e1;
+}
+.RadioDetail_RadioDetailPrograms_Item_Album{
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.RadioDetail_RadioDetailPrograms_Item_PlayBox{
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 16px;
+  height: 16px;
+  background: rgba(0,0,0,.7);
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 50%;
+}
+.RadioDetail_RadioDetailPrograms_Item_PlayIcon{
+  width: 6px;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+.RadioDetail_RadioDetailPrograms_Item_Name{
+  overflow: hidden;
+  width: 292px;
+  float: left;
+  height: 40px;
+}
+.RadioDetail_RadioDetailPrograms_Item_PlayBox2{
+  float: left;
+  padding: 13px 0px;
+  line-height: 13px;
+  margin-right: 69px;
+}
+.RadioDetail_RadioDetailPrograms_Item_PlayIcon2{
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-right: 2px;
+}
+.RadioDetail_RadioDetailPrograms_Item_GoodBox{
+  float: left;
+  padding: 13px 0px;
+  line-height: 3px;
+  margin-right: 60px;
+}
+.RadioDetail_RadioDetailPrograms_Item_GoodIcon{
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-right: 2px;
+}
+/* 
+    //////////////////////////////////////////
+    NewMusic Component ----------NewMusic.js
+    //////////////////////////////////////////
+*/
+.NewMusic_Link{
+  background-color: #fff;
+  border: none;
+  width: 108px;
+  height: 26px;
+  border: 1px solid #D8D8D8;
+  outline: none;
+}
+.NewMusic_Link_Newsong{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.NewMusic_Link_Newdisc{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.NewMusic_Link_Active{
+  background-color: #6E6E6D;
+  color: #fff;
+}
+/* 
+    //////////////////////////////////////////
+    Bottom Component ----------Bottom.js
+    //////////////////////////////////////////
+*/
+.Bottom_WrapBox{
+  box-sizing: border-box;
+  height: 60px;
+  width: 1000px;
+  border-top: 1px solid #C1BFC0;
+  background-color: rgb(243, 239, 238);
+}
+/* 
+    //////////////////////////////////////////
+    Bottom Component ----------Controler.js
+    //////////////////////////////////////////
+*/
+.Controler_WrapBox{
+  position: relative;
+  float: left;
+  height: 50px;
+  width: 187px;
+  padding: 10px 0px 0 27px;
+}
+.Controler_PrevSong{
+  width: 33px;
+  height: 33px;
+  margin-top: 2px;
+}
+.Controler_Button{
+  float: left;
+  margin-right: 22px;
+  background-color: #D20015;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+.Controler_Button .Cover{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Controler_Button:link .Cover{
+  display: none;
+}
+.Controler_Button:active .Cover{
+  display: block;
+}
+
+.Controler_Button:visited .Cover{
+  display: none;
+  
+}
+.Controler_PrevSong_Background{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+  background: no-repeat center center;
+  background-size: 18px 18px;
+}
+.Controler_PlayOrPuase{
+  width: 37px;
+  height: 37px;
+}
+.Controler_PlayOrPuase_Background{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  background: no-repeat center center;
+  background-size: 20px 20px;
+}
+.Controler_RealProcessBar{
+  position: absolute;
+  bottom: -60px;
+  z-index: -99;
+  visibility: hidden;
+}
+/* 
+    //////////////////////////////////////////
+    Bottom Component ----------ProcessBar.js
+    //////////////////////////////////////////
+*/
+
+.ProcessBar_WrapBox{
+  /* background-color:red; */
+  position: relative;
+  height:60px;
+  width:485px;
+  float:left;
+}
+.ProcessBar_Process{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 407px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #A09999;
+}
+.ProcessBar_CurrentProcess{
+  background-color: #D40000;
+  top: 2px;
+}
+.ProcessBar_Dot{
+  display: inline-block;
+  position: absolute;
+  right: -11px;
+  top:-10px;
+  width: 22px;
+  height: 22px;
+  background: no-repeat center center;
+  background-size: 14px; 
+}
+.ProcessBar_TimeBox{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 12px;
+  font-size: 0;
+  -webkit-text-size-adjust: none;
+  color: #888888;
+}
+.ProcessBar_TimeBox span{
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+/* 
+    //////////////////////////////////////////
+    Bottom Component ----------SmallControlComponent.js
+    //////////////////////////////////////////
+*/
+.SmallControlComponent_WrapBox{
+  position: relative;
+  float: left;
+  width: 121px;
+  height: 60px;
+  margin-left: 32px;
+}
+.SmallControlComponent_VolBox{
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: no-repeat center center;
+  background-size: 16px 14px;
+  opacity: 0.6;
+}
+.SmallControlComponent_VolBox:active{
+  opacity: 1;
+}
+.SmallControlComponent_VolBox:link,SmallControlComponent_VolBox:visited{
+  opacity: 0.6;
+}
+.SmallP{
+  left: 21px;
+  width: 100px;
+}
+.SmallP span{
+  right: -14px;
+  width: 26px;
+  height: 26px;
+  top:-11px;
+}
+.SmallControlComponent_PlayMode{
+  left: 141px;
+  margin-top: -1px;
+}
+.SmallControlComponent_SongWords{
+  width: 25px;
+  height: 24px;
+  background-size: 25px 24px;
+  left: 172px;
+  margin-top: -1px;
+}
+.SmallControlComponent_SongList{
+  width: 27px;
+  height: 22px;
+  left: 203px;
+  padding-left: 22px;
+  margin-top: 1px;
+  background-size: 22px 22px;
+  background-position: left center;
+}
+.SongNum{
+  display: inline-block;
+  width: 27px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #B0AAA9;
+  border-radius: 16px;
+  color: #fff;
+}
+.SmallControlComponent_List_WrapBox{
+  width: 576px;
+  height: 448px;
+  background-color: #fff;
+  position: absolute;
+  top: -448px;
+  right: -148px;
+  z-index: 3;
+  box-shadow: -2px 0px 2px 0px rgba(0,0,0,.3);
+}
+.SmallControlComponent_List_Cover{
+  position: absolute;
+  top: -602px;
+  left:-730px;
+  width: 998px;
+  height: 602px;
+  z-index: 2;
+}
+.SmallControlComponent_List_Links{
+  height: 39px;
+  background-color: #C8C6C7;
+  text-align: center;
+  line-height: 39px;
+  border-bottom: 1px solid #CECECE;
+  box-shadow: 1px 4px 6px -3px #CECECE;
+}
+.SmallControlComponent_List_Links>a{
+  display: inline-block;
+  width: 107px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #D9D9D9;
+  color: #848484;
+  font-size: 12px;
+  text-align: center;
+}
+.SmallControlComponent_List_Link_Left{
+  border-top-left-radius: 10px 3px;
+  border-bottom-left-radius: 10px 3px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.SmallControlComponent_List_Link_Right{
+  border-top-right-radius: 10px 3px;
+  border-bottom-right-radius: 10px 3px;
+}
+.SmallControlComponent_List_FunBar{
+  position: relative;
+  z-index: -1;
+  height: 29px;
+  line-height: 29px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.SmallControlComponent_List_FunBar_SongCount{
+  padding-left: 20px;
+  color: #9999A5;
+  font-size: 12px;
+}
+.SmallControlComponent_List_FunBar_Btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 151px;
+  height: 20px;
+}
+.SmallControlComponent_List_addFile{
+  display: inline-block;
+  width: 78px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding-left: 22px;
+  background: no-repeat left center;
+  background-size: 16px 14px;
+  border-right: 1px solid #E5E5E5;
+
+}
+.SmallControlComponent_List_trash{
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-left: 19px;
+  background: no-repeat left center;
+  background-size: 13px 14px;
+  cursor: pointer;
+}
+.SmallControlComponent_List_Contain{
+  width: 576px;
+  height: 378px;
+  overflow: auto;
+}
+
+.SmallControlComponent_Item_WrapBox{
+  height: 28px;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-left: 21px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+.SmallControlComponent_Item_WrapBox_Single{
+  background-color: #F9F9F9;
+}
+.SmallControlComponent_Item_WrapBox_Active{
+  background-color: #e6e6e6;
+}
+.SmallControlComponent_Item_Name{
+  width: 319px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  overflow: hidden;
+}
+.SmallControlComponent_Item_Artist{
+  width: 137px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  overflow: hidden;
+}
+.SmallControlComponent_Item_Time{
+  padding-left: 46px;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+}
